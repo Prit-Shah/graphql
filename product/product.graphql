@@ -1,0 +1,14 @@
+type Query {
+  product: [Product],
+  oneproduct(n: String!): Product
+}
+
+type Mutation {
+  addproduct(n: String!): String
+  deleteproduct(n: String!): String
+}
+
+type Product {
+  _id: String
+  name: String!
+}
